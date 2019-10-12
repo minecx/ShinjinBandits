@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  CameraTracker
+//  CameraTracker-FA19IEEEUCSD
 //
-//  Created by Chongbin (Bob) Zhang on 2019/10/11.
+//  Created by Chongbin (Bob) Zhang on 2019/10/12.
 //  Copyright © 2019 Bob. All rights reserved.
 //
 
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentCloudKitContainer(name: "CameraTracker")
+        let container = NSPersistentCloudKitContainer(name: "CameraTracker_FA19IEEEUCSD")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
