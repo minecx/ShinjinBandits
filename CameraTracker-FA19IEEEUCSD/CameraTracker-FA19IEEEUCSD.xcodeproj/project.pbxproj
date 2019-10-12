@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E0B1BF2C23524C2A00144DDB /* CameraTracker-FA19IEEEUCSD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CameraTracker-FA19IEEEUCSD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B1BF2C23524C2A00144DDB /* CameraTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B1BF2F23524C2A00144DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0B1BF3123524C2A00144DDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E0B1BF3423524C2A00144DDB /* CameraTracker_FA19IEEEUCSD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CameraTracker_FA19IEEEUCSD.xcdatamodel; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		E0B1BF2D23524C2A00144DDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E0B1BF2C23524C2A00144DDB /* CameraTracker-FA19IEEEUCSD.app */,
+				E0B1BF2C23524C2A00144DDB /* CameraTracker.app */,
 				E0B1BF4523524C2B00144DDB /* CameraTracker-FA19IEEEUCSDTests.xctest */,
 				E0B1BF5023524C2C00144DDB /* CameraTracker-FA19IEEEUCSDUITests.xctest */,
 			);
@@ -156,7 +156,7 @@
 			);
 			name = "CameraTracker-FA19IEEEUCSD";
 			productName = "CameraTracker-FA19IEEEUCSD";
-			productReference = E0B1BF2C23524C2A00144DDB /* CameraTracker-FA19IEEEUCSD.app */;
+			productReference = E0B1BF2C23524C2A00144DDB /* CameraTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E0B1BF4423524C2B00144DDB /* CameraTracker-FA19IEEEUCSDTests */ = {
@@ -440,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CameraTracker-FA19IEEEUCSD/Preview Content\"";
+				DEVELOPMENT_TEAM = 2UZMP5XDZL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CameraTracker-FA19IEEEUCSD/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -447,7 +448,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "chz026UCSD.CameraTracker-FA19IEEEUCSD";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CameraTracker;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CameraTracker-FA19IEEEUCSD/Preview Content\"";
+				DEVELOPMENT_TEAM = 2UZMP5XDZL;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CameraTracker-FA19IEEEUCSD/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,7 +468,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "chz026UCSD.CameraTracker-FA19IEEEUCSD";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CameraTracker;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
