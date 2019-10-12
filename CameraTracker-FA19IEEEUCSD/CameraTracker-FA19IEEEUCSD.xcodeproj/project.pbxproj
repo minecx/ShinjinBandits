@@ -16,6 +16,7 @@
 		E0B1BF3F23524C2B00144DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B1BF3D23524C2B00144DDB /* LaunchScreen.storyboard */; };
 		E0B1BF4A23524C2B00144DDB /* CameraTracker_FA19IEEEUCSDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B1BF4923524C2B00144DDB /* CameraTracker_FA19IEEEUCSDTests.swift */; };
 		E0B1BF5523524C2C00144DDB /* CameraTracker_FA19IEEEUCSDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B1BF5423524C2C00144DDB /* CameraTracker_FA19IEEEUCSDUITests.swift */; };
+		E0BCAA5823526403008CF4C1 /* NewUserRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCAA5723526403008CF4C1 /* NewUserRegistration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E0B1BF5023524C2C00144DDB /* CameraTracker-FA19IEEEUCSDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CameraTracker-FA19IEEEUCSDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B1BF5423524C2C00144DDB /* CameraTracker_FA19IEEEUCSDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTracker_FA19IEEEUCSDUITests.swift; sourceTree = "<group>"; };
 		E0B1BF5623524C2C00144DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0BCAA5723526403008CF4C1 /* NewUserRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserRegistration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E0B1BF2F23524C2A00144DDB /* AppDelegate.swift */,
-				E0B1BF3123524C2A00144DDB /* SceneDelegate.swift */,
+				E0BCAA5623526371008CF4C1 /* Scenes */,
 				E0B1BF3623524C2A00144DDB /* ContentView.swift */,
 				E0B1BF3823524C2B00144DDB /* Assets.xcassets */,
 				E0B1BF3D23524C2B00144DDB /* LaunchScreen.storyboard */,
@@ -137,6 +139,15 @@
 				E0B1BF5623524C2C00144DDB /* Info.plist */,
 			);
 			path = "CameraTracker-FA19IEEEUCSDUITests";
+			sourceTree = "<group>";
+		};
+		E0BCAA5623526371008CF4C1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E0B1BF3123524C2A00144DDB /* SceneDelegate.swift */,
+				E0BCAA5723526403008CF4C1 /* NewUserRegistration.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BCAA5823526403008CF4C1 /* NewUserRegistration.swift in Sources */,
 				E0B1BF3023524C2A00144DDB /* AppDelegate.swift in Sources */,
 				E0B1BF3223524C2A00144DDB /* SceneDelegate.swift in Sources */,
 				E0B1BF3723524C2A00144DDB /* ContentView.swift in Sources */,
