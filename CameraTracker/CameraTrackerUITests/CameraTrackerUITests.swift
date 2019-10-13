@@ -1,6 +1,6 @@
 //
-//  CameraTracker_FA19IEEEUCSDUITests.swift
-//  CameraTracker-FA19IEEEUCSDUITests
+//  CameraTrackerUITests.swift
+//  CameraTrackerUITests
 //
 //  Created by Chongbin (Bob) Zhang on 2019/10/12.
 //  Copyright © 2019 Bob. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class CameraTracker_FA19IEEEUCSDUITests: XCTestCase {
+class CameraTrackerUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
