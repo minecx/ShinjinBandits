@@ -17,6 +17,7 @@
 		E0B1BF4A23524C2B00144DDB /* CameraTracker_FA19IEEEUCSDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B1BF4923524C2B00144DDB /* CameraTracker_FA19IEEEUCSDTests.swift */; };
 		E0B1BF5523524C2C00144DDB /* CameraTracker_FA19IEEEUCSDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B1BF5423524C2C00144DDB /* CameraTracker_FA19IEEEUCSDUITests.swift */; };
 		E0BCAA5823526403008CF4C1 /* NewUserRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCAA5723526403008CF4C1 /* NewUserRegistration.swift */; };
+		E0BCAA5A235284F6008CF4C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BCAA59235284F6008CF4C1 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E0B1BF5423524C2C00144DDB /* CameraTracker_FA19IEEEUCSDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTracker_FA19IEEEUCSDUITests.swift; sourceTree = "<group>"; };
 		E0B1BF5623524C2C00144DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0BCAA5723526403008CF4C1 /* NewUserRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserRegistration.swift; sourceTree = "<group>"; };
+		E0BCAA59235284F6008CF4C1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				E0B1BF3623524C2A00144DDB /* ContentView.swift */,
 				E0B1BF3823524C2B00144DDB /* Assets.xcassets */,
 				E0B1BF3D23524C2B00144DDB /* LaunchScreen.storyboard */,
+				E0BCAA59235284F6008CF4C1 /* Main.storyboard */,
 				E0B1BF4023524C2B00144DDB /* Info.plist */,
 				E0B1BF3323524C2A00144DDB /* CameraTracker_FA19IEEEUCSD.xcdatamodeld */,
 				E0B1BF3A23524C2B00144DDB /* Preview Content */,
@@ -257,6 +260,7 @@
 				E0B1BF3F23524C2B00144DDB /* LaunchScreen.storyboard in Resources */,
 				E0B1BF3C23524C2B00144DDB /* Preview Assets.xcassets in Resources */,
 				E0B1BF3923524C2B00144DDB /* Assets.xcassets in Resources */,
+				E0BCAA5A235284F6008CF4C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -436,13 +440,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -462,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "chz026UCSD.CameraTracker-FA19IEEEUCSD";
 				PRODUCT_NAME = CameraTracker;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -482,7 +486,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "chz026UCSD.CameraTracker-FA19IEEEUCSD";
 				PRODUCT_NAME = CameraTracker;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

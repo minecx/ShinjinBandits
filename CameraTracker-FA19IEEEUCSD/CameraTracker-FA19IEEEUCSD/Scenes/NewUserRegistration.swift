@@ -6,4 +6,17 @@
 //  Copyright © 2019 Bob. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class NewUserRegistration: UIViewController {
+    
+    // MARK: - Collection View related
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+
+}
