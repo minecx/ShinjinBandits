@@ -88,6 +88,14 @@
 			path = Front;
 			sourceTree = "<group>";
 		};
+		E01F51CF2353E20700276E79 /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				E0BCAB1F2352EA59008CF4C1 /* AppDelegate.swift */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
 		E0BCAB132352EA59008CF4C1 = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +119,7 @@
 		E0BCAB1E2352EA59008CF4C1 /* CameraTracker */ = {
 			isa = PBXGroup;
 			children = (
-				E0BCAB1F2352EA59008CF4C1 /* AppDelegate.swift */,
+				E01F51CF2353E20700276E79 /* Back */,
 				E0BCAB212352EA59008CF4C1 /* SceneDelegate.swift */,
 				E01F51CC2353BDBC00276E79 /* Front */,
 				E0BCAB2B2352EA5B008CF4C1 /* Assets.xcassets */,

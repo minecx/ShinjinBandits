@@ -9,10 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var LoginUsername: UITextField!
-    @IBOutlet weak var LoginPassword: UITextField!
-    @IBAction func log_in(_ sender: Any) {
-        
+    @IBOutlet weak var IPAddress: UITextField!
+    @IBAction func connect(_ sender: UIButton) {
     }
     
     override func viewDidLoad() {
