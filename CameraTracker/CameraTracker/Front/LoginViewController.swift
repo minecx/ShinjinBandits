@@ -10,7 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var IPAddress: UITextField!
-    @IBAction func connect(_ sender: UIButton) {
+    @IBAction func connect(_ sender: UIButton) {}
+    
+    func pingHost(_ fullURL: String) {
+        let url = URL(string: fullURL)
+
+        let task = URLSession.shared.dataTask(with: url!) { _, response, _ in
+            if let httpResponse = response as? HTTPURLResponse {
+                print(httpResponse.statusCode)
+            }
+        }
+        task.resume()
     }
     
     override func viewDidLoad() {
