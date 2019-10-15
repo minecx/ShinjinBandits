@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var IPAddress: UITextField!
     @IBAction func connect(_ sender: UIButton) {}
     
-    func pingHost(_ fullURL: String) {
-        let url = URL(string: fullURL)
+    func pingHost(_ IPAddress: String) {
+        let url = URL(string: IPAddress)
 
         let task = URLSession.shared.dataTask(with: url!) { _, response, _ in
             if let httpResponse = response as? HTTPURLResponse {
@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
 
 }
 
