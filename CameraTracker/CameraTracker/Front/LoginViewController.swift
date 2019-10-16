@@ -10,14 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var IPAddress: UITextField!
-    @IBAction func connect(_ sender: UIButton) {}
+    @IBAction func connect(_ sender: UIButton) {
+        pingHost(IPAddress.text!)
+    }
     
     func pingHost(_ IPAddress: String) {
         let url = URL(string: IPAddress)
 
         let task = URLSession.shared.dataTask(with: url!) { _, response, _ in
             if let httpResponse = response as? HTTPURLResponse {
-                print(httpResponse.statusCode)
+                print("Response code: \(httpResponse.statusCode)")
+            }
+            else {
+                print("Connected failed, httpResponse: \(String(describing: response))")
             }
         }
         task.resume()
