@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     }
     
     func pingHost(_ IPAddress: String) {
+        let _test: String = "https://api.datamuse.com/words?ml=antic+city"
         let url = URL(string: IPAddress)
 
         let task = URLSession.shared.dataTask(with: url!) { _, response, _ in
