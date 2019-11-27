@@ -34,7 +34,7 @@
                                 <state key="normal" title="Connect! "/>
                                 <connections>
                                     <action selector="connect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngR-yb-jFp"/>
-                                    <segue destination="7ig-8u-PpF" kind="show" id="0Uf-CT-QEA"/>
+                                    <segue destination="7ig-8u-PpF" kind="showDetail" id="0Uf-CT-QEA"/>
                                 </connections>
                             </button>
                         </subviews>
