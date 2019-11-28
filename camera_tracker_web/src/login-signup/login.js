@@ -9,7 +9,7 @@ export default class Login extends React.Component {
       <Grid centered columns={2} style={{marginTop: '5%'}}>
         <Grid.Column>
         <Header as="h2" textAlign="center">
-            Login to your Camera
+          Login to your Camera
         </Header>
         <Segment>
           <Form size="large">

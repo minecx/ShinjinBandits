@@ -15,23 +15,17 @@ import Login from './login-signup/login.js';
 import Signup from './login-signup/signup.js';
 
 export default class App extends React.Component {
-  renderLogin() {
-    return (
-      <Login />
-    )
-  }
-
   render() {
     return (
-      <div>                                                        
-        <BrowserRouter>                                                            
-          <div>                                                              
+      <div>
+        <BrowserRouter>
+          <div>
             <Switch>
               <Route exact path="/" component={Login} />
-              <Route exact path="/signup" component={Signup} />         
-            </Switch>                                                              
-          </div>                                                                   
-        </BrowserRouter>                                                           
+              <Route exact path="/signup" component={Signup} />
+            </Switch>
+          </div>
+        </BrowserRouter>
       </div>
     )
   }
