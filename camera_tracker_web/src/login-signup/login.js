@@ -10,24 +10,30 @@ export default class Login extends React.Component {
   }
 
   ping(ip) {
-    var ws = new WebSocket("ws://" + ip);
-    ws.onerror = function (e) {
-      console.log(ip + " is good. ")
-      ws = null;
+    try {
+      var ws = new WebSocket("ws://" + ip);
+    }
+    catch (SyntaxError) {
+      alert("Invalid IP Address. ");
+      return false;
+    }
+    ws.onerror = function () {
+      console.log(ip + " is good. ");
+      return true;
     };
     setTimeout(function () {
       if (ws != null) {
         ws.close();
         ws = null;
-        console.log(ip + " is bad. ")
+        console.log(ip + " is bad. ");
+        return false;
       }
     }, 2000);
   }
-
+  
   signIn() {
     if (this.state.IP.length !== 0) {
-      console.log(this.state.IP)
-      this.ping(this.state.IP)
+      this.ping(this.state.IP);
     }
   }
 
