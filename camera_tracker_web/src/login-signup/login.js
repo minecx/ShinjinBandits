@@ -4,6 +4,17 @@ import 'semantic-ui-css/semantic.min.css';
 import { Button, Form, Grid, Header, Message, Segment} from 'semantic-ui-react';
 
 export default class Login extends React.Component {
+  state = {
+    IP: "", 
+    pwd: "",
+  }
+
+  signIn() {
+    if (this.state.IP.length === 0) {
+      alert("Please fill out all required fields. ")
+    }
+  }
+
   render() {
     return (
       <Grid centered columns={2} style={{marginTop: '5%'}}>
@@ -18,6 +29,10 @@ export default class Login extends React.Component {
             icon="user"
             iconPosition="left"
             placeholder="IP address"
+            onChange={(e) => {
+              this.setState({IP: e.target.value})
+              console.log(this.state.IP)
+            }}
           />
           <Form.Input
             fluid
@@ -25,8 +40,11 @@ export default class Login extends React.Component {
             iconPosition="left"
             placeholder="Password (optional)"
             type="password"
+            onChange={(e) => {
+              this.setState({pwd: e.target.value})
+            }}
           />
-          <Button color="blue" fluid size="large">
+          <Button color="blue" fluid size="large" onClick={this.signIn()}>
             Login
           </Button>
           </Form>
