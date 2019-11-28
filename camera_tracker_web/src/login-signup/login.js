@@ -9,9 +9,25 @@ export default class Login extends React.Component {
     pwd: "",
   }
 
+  ping(ip) {
+    var ws = new WebSocket("ws://" + ip);
+    ws.onerror = function (e) {
+      console.log(ip + " is good. ")
+      ws = null;
+    };
+    setTimeout(function () {
+      if (ws != null) {
+        ws.close();
+        ws = null;
+        console.log(ip + " is bad. ")
+      }
+    }, 2000);
+  }
+
   signIn() {
-    if (this.state.IP.length === 0) {
-      alert("Please fill out all required fields. ")
+    if (this.state.IP.length !== 0) {
+      console.log(this.state.IP)
+      this.ping(this.state.IP)
     }
   }
 
@@ -31,7 +47,6 @@ export default class Login extends React.Component {
             placeholder="IP address"
             onChange={(e) => {
               this.setState({IP: e.target.value})
-              console.log(this.state.IP)
             }}
           />
           <Form.Input
